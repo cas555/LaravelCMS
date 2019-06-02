@@ -148,4 +148,12 @@ class PostsController extends Controller
         session()->flash('sucs','Post Restored Successfully.');
         return redirect()->back();
     }
+
+    public function view(Post $post)
+    {
+      
+        
+        return view('posts.view')->with('post',$post);
+      
+    }
 }

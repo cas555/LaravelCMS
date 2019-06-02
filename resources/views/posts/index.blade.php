@@ -27,6 +27,7 @@
                          </th>
                          <th></th>
                          <th></th>
+                         <th></th>
                      </thead>
 
                      <tbody>
@@ -49,6 +50,12 @@
                                     {{ $post->category->name}}
 
                                     </a>
+                                </td>
+
+                                <td>
+                                <a href="{{ route('posts.view', $post->id) }}">
+                                   View this Post.
+                                </a>
                                 </td>
 
                                
